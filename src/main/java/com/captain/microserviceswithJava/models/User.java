@@ -1,4 +1,4 @@
-package com.captain.microserviceswithJava.model;
+package com.captain.microserviceswithJava.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

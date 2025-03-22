@@ -1,4 +1,4 @@
-package com.captain.microserviceswithJava.controller;
+package com.captain.microserviceswithJava.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.captain.microserviceswithJava.model.User;
+import com.captain.microserviceswithJava.models.User;
 
 //@Controller
 //@ResponseBody     //used/required to pass data to the server (String)
