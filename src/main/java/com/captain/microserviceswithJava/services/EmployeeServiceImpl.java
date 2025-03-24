@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
+import com.captain.microserviceswithJava.error.EmployeeNotFoundException;
 import com.captain.microserviceswithJava.models.Employee;
 
 @Service
@@ -34,7 +35,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 				.filter(employee -> employee.getEmployeeID()
 						.equalsIgnoreCase(id))
 				.findFirst()
-				.orElseThrow(() -> new RuntimeException("Employee not found with id: "+id));
+				.orElseThrow(() -> new EmployeeNotFoundException("Employee not found with id: "+id));
 	}
 
 }
