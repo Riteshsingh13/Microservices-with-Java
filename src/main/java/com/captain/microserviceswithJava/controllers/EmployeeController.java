@@ -15,7 +15,7 @@ import com.captain.microserviceswithJava.models.Employee;
 import com.captain.microserviceswithJava.services.EmployeeService;
 
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/v1/employees")
 public class EmployeeController {
 
 	@Autowired
